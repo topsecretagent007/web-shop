@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply w-full mx-auto max-w-[1440px];
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 4px;
+  background: #0D1121;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1FAAEE;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF8B8B;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #032E44;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.text-outline {
+  color: #fff;
+  text-shadow:
+    6px 6px 0 #032E44,
+    -3px 3px 0 #032E44,
+    -3px -3px 0 #032E44,
+    3px -3px 0 #032E44;
+
+}
+
+.text-outline2 {
+  color: #fff;
+  text-shadow:
+    3px 3px 0 #032E44,
+    -3px 3px 0 #032E44,
+    -3px -3px 0 #032E44,
+    3px -3px 0 #032E44;
+
+}
+
+.text-outline3 {
+  text-shadow:
+    2px 2px 0 #032E44,
+    -2px 2px 0 #032E44,
+    -2px -2px 0 #032E44,
+    2px -2px 0 #032E44;
+}
+
+.text-outline3 a {
+  color: #032E44;
+  text-shadow:
+    2px 2px 0 #80ABFF,
+    -2px 2px 0 #80ABFF,
+    -2px -2px 0 #80ABFF,
+    2px -2px 0 #80ABFF;
+}
+
+.text-outline4 {
+  color: #67BFAF;
+  text-shadow:
+    3px 3px 0 #032E44,
+    -3px 3px 0 #032E44,
+    -3px -3px 0 #032E44,
+    3px -3px 0 #032E44;
+
+}
+
+@media screen and (max-width: 320px) {
+  .slider-div {
+    width: 120px !important;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .slider-div {
+    width: 120px !important;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .slider-div {
+    width: 120px !important;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .slider-div {
+    width: 120px !important;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider-div {
+    width: 120px !important;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .slider-div {
+    width: 300px !important;
+    height: 300px;
+  }
+}
